@@ -4,7 +4,7 @@
  uses crt;
  
  Type
-   inv = array[1..20]of string;
+   inv = array[1..20]of string;//custom table variable made for the inventory
 
 //--------------------==============================Variables==============================--------------------\\
 var
