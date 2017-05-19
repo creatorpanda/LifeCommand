@@ -61,8 +61,9 @@ Writeln ('                                                      """*$$$$$$$"');
 writeln();
 delay (2000);
 ```
-(this symbol mass is a skull right next to the phrase "The End". Trust me it works just fine when run the .exe file)
+*this symbol mass is a skull right next to the phrase "The End". Trust me it works just fine when run the .exe file*
 ------------------------------------------------------------------------------------------------------------------------------------
 
 *This last one is something like a walkthrough..*
+
 3)I tried to make things in a way where you have to move around before you find out what to do.  Allthough the game is short (and also not finished), you first have to get wood from the **noisy forest**, before you can continue on making a torch in the **peaceful village** and after all that, get in the cave. The **clean river** is one of the four places i had to create, but there is nothing to do there. Nothing that adds to the history. It just exists.
