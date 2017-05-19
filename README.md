@@ -7,15 +7,26 @@ This is not the final product. It's something i started and keep updating when h
 
 suggestions are welcomed and appreciated.
 
-The source file named "LifeCommand - game code.pas" is [here](https://github.com/creatorpanda/LifeCommand/blob/master/LifeCommand%20-%20game%20code.pas)
+The source file named "LifeCommand - game code.pas" containing all the code of the game is [here](https://github.com/creatorpanda/LifeCommand/blob/master/LifeCommand%20-%20game%20code.pas)
 
-A couple of notes:
+Wild notes appeared!:
+1) There are many delays in the game. It's annoying that they are all around, but i believe they make the game way better than just shooting out all the chat and ascii art at once.
+------------------------------------------------------------------------------------------------------------------------------------
 
-1) As you may notice, the game lacks of saving function. I didn't want to leave the game like this, so i came up with an idea. Instead of just pressing the X button and closing the CMD, stopping the game violently, you have the option to return to the crossroad you started from and press the "=" button. 
+2) input options that require typing are **writeln** commands, while input options that require a letter or a number are **ReadKey** commands.
 ```pascal
-.
-.
-.
+//choosing your name
+readln (username);
+
+//and choosing a tribe
+writeln ('Available tribes: (1)Human, (2)Goblin, (3)Ork, (4)Elf');
+writeln();
+tribe:= ReadKey;
+```
+------------------------------------------------------------------------------------------------------------------------------------
+
+3) As you may notice, the game lacks of saving function. I didn't want to leave the game like this, so i came up with an idea. Instead of just pressing the X button and closing the CMD, stopping the game violently, you have the option to return to the crossroad you started from and press the "=" button. The character you're controling dies, **without saving anything** but to be honest, the game is really short to consider it worth saving. Nothing special, just a 
+```pascal
 until  (action = '=');
 
 textcolor(Red);
@@ -50,4 +61,8 @@ Writeln ('                                                      """*$$$$$$$"');
 writeln();
 delay (2000);
 ```
-The character you're controling dies, **without saving anything** but to be honest, the game is really short to consider it worth saving.
+(this symbol mass is a skull right next to the phrase "The End". Trust me it works just fine when run the .exe file)
+------------------------------------------------------------------------------------------------------------------------------------
+
+*This last one is something like a walkthrough..*
+3)I tried to make things in a way where you have to move around before you find out what to do.  Allthough the game is short (and also not finished), you first have to get wood from the **noisy forest**, before you can continue on making a torch in the **peaceful village** and after all that, get in the cave. The **clean river** is one of the four places i had to create, but there is nothing to do there. Nothing that adds to the history. It just exists.
