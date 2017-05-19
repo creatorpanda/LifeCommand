@@ -7,4 +7,5 @@ This is not the final product. It's something i started and keep updating when h
 
 suggestions are welcomed and appreciated.
 
-(Code will be uploaded soon)
+The source file named "LifeCommand - game code.pas" is [here](https://github.com/creatorpanda/LifeCommand/blob/master/LifeCommand%20-%20game%20code.pas)
+
