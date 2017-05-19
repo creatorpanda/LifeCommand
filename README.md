@@ -12,7 +12,7 @@ The source file named "LifeCommand - game code.pas" containing all the code of t
 Wild notes appeared!:
 
 1) There are many delays in the game. It's annoying that they are all around, but i believe they make the game way better than just shooting out all the chat and ascii art at once.
-------------------------------------------------------------------------------------------------------------------------------------
+---
 
 2) input options that require typing are **writeln** commands, while input options that require a letter or a number are **ReadKey** commands.
 ```pascal
@@ -24,7 +24,7 @@ writeln ('Available tribes: (1)Human, (2)Goblin, (3)Ork, (4)Elf');
 writeln();
 tribe:= ReadKey;
 ```
-------------------------------------------------------------------------------------------------------------------------------------
+---
 
 3) As you may notice, the game lacks of saving function. I didn't want to leave the game like this, so i came up with an idea. Instead of just pressing the X button and closing the CMD, stopping the game violently, you have the option to return to the crossroad you started from and press the "=" button. The character you're controling dies, **without saving anything** but to be honest, the game is really short to consider it worth saving. Nothing special, just a 
 ```pascal
@@ -62,8 +62,9 @@ Writeln ('                                                      """*$$$$$$$"');
 writeln();
 delay (2000);
 ```
+
 *this symbol mass is a skull right next to the phrase "The End". Trust me it works just fine when run the .exe file*
-------------------------------------------------------------------------------------------------------------------------------------
+---
 
 *This last one is something like a walkthrough*
 
