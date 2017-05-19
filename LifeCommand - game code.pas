@@ -6,26 +6,26 @@
  Type
    inv = array[1..20]of string;
 
-//--------------------==============================Varieties==============================--------------------\\
+//--------------------==============================Variables==============================--------------------\\
 var
 
-username: string; //Μεταβλητή ονόματος 
-tribe: string; //Μεταβλητή Φυλής 
-mastery: string; //Μεταβλητή Ρόλου
-destination:string; //Μεταβλητή Μετακίνησης
-action:string; //Μεταβλητή Επιλογών
-tribeSTR: integer;
-tribeAGI: integer;
-tribeWIS: integer;
-masterySTR: integer;
-masteryAGI: integer;
-masteryWIS: integer;
-TotalSTR: integer;
-TotalAGI: integer;
-TotalWIS: integer;
-meetthevillager:boolean;//Μεταβλητή που ορίζει το αν μίλησες για πρώτη φορά στο χωρικό (Αν σε γνωρίζει!).
-inventory: inv;
-i:integer;
+username: string; //player's name
+tribe: string; //player's tribe
+mastery: string; //player's master (mage, archer, etc)
+destination:string; //player's moving available options and current position
+action:string; //player's available actions
+tribeSTR: integer;//strength points given to player by tribe selection 
+tribeAGI: integer;//agility points given to player by tribe selection
+tribeWIS: integer;//wisdom points given to player by tribe selection
+masterySTR: integer;//strength points given to player by mastery selection 
+masteryAGI: integer;//agility points given to player by mastery selection
+masteryWIS: integer;//wisdom points given to player by mastery selection
+TotalSTR: integer;//total strength (tribeSTR + masterySTR)
+TotalAGI: integer;//total agility (tribeAGI +masteryAGI)
+TotalWIS: integer;//total wisdom (tribeWIS +masteryWIS)
+meetthevillager:boolean;//variable that defines if the ironsmith NPC recognises you. (changes to TRUE after you first speak to him)
+inventory: inv;//inventory table
+i:integer;//general variable used for loops
 //--------------------==============================Procedures==============================--------------------\\
 
 //----------====================StatScreen====================----------\\
@@ -487,7 +487,7 @@ writeln ();
 Delay(800);
 
 writeln ('Loading Game..');
-Delay(5000); //Εφέ φόρτωσης για να προλάβει ο χρήστης να διαβάσει τα TIPS!
+Delay(5000); //Loading effect so player manages to read the tips
 ClrScr;
 
 //--------------------==============================BACKGROUND Color WHITE==============================--------------------\\
@@ -507,15 +507,11 @@ writeln('  \_____|_| |_|\___/ \___/|___/\___|  \__,_| |_| \_|\__,_|_| |_| |_|\__
 writeln();
 readln (username);
 
-If (username='potatogod') then
+If (username='creatorpanda') then
 begin
 writeln();
 writeln('hello Programmer! Have fun!');
 delay(1500);
-end;
-If (username='misha') then
-begin
-username:='retard';
 end;
 ClrScr;
 
@@ -823,7 +819,7 @@ textcolor(White);
 writeln('I really hope you had fun!! :D');
 writeln();
 delay (1500);
-If (username='potatogod') then
+If (username='creatorpanda') then
 begin
 writeln('PROGRAMMER DOWN!');
 delay(1500);
@@ -832,11 +828,6 @@ end;
 textcolor(Red);
 writeln();
 writeln('Press <Enter> to terminate the game');
-readln();
-//Μιχανισμός τερματισμού παιχνιδιού όταν παίζει από το τελικό προϊόν (.exe) 
-//διότι δίχως αυτό, το παιχνίδι τερματίζει άμεσα και τα μηνύματα τερματισμού πριν το μηχανισμό δε προλαβαίνουν να διαβαστούν απ' το χρήστη.
-//Ένα delay μεγάλης διάρκειας θα ήταν κακή επιλογή..                                  
+readln();                
  end.
-
 //writeln('Game under construction! Wait for the rest of it to come out!');
-//writeln();
