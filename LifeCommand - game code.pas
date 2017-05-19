@@ -1,4 +1,4 @@
-﻿program LifeCommand;
+program LifeCommand;
 
 //--------------------==============================Libraries==============================--------------------\\
  uses crt;
@@ -179,14 +179,7 @@ end;
 
 //----------====================Position W====================----------\\
 procedure destination_W(action:string);
-
-var
-i:integer;
-space:integer;
-
 begin
-
-
 StatScreen(TotalSTR, TotalAGI, TotalWIS);
 writeln ('Reached the PEACEFUL VILLAGE');
 writeln ('There''s a lot of people around, minding their business silently');
@@ -367,7 +360,6 @@ end;
 //----------====================Position DE====================----------\\
 procedure destination_DE(action:string);
 var
-space:integer;
 begin
 StatScreen(TotalSTR, TotalAGI, TotalWIS);
 writeln ('You moved DEEPER INTO THE NOISY FOREST');
@@ -413,52 +405,7 @@ end;
 
 begin
 //--------------------==============================TEXT color LIGHTGREEN==============================--------------------\\
-textcolor(LightGreen);
-//--------------------==============================Welcome Message==============================--------------------\\
-writeln ('SATURN STUDIOS');
-//--------------------==============================TEXT color WHITE==============================--------------------\\
-textcolor(White);
-//--------------------==============================BACKGROUND color BLACK==============================--------------------\\
-TextBackground(Black);
-//--------------------==============================STUDIOS LOGO :D==============================--------------------\\
- writeln ('                                                                     ..;===+.');
- writeln ('                                                                 .:=iiiiii=+=');
- writeln ('                                                              .=i))=;::+)i=+,');
- writeln ('                                                           ,=i);)I)))I):=i=;');
- writeln ('                                                        .=i==))))ii)))I:i++');
- writeln ('                                                      +)+))iiiiiiii))I=i+:''');
- writeln ('                                 .,:;;++++++;:,.       )iii+:::;iii))+i=''');
- writeln ('                              .:;++=iiiiiiiiii=++;.    =::,,,:::=i));=+''');
- writeln ('                            ,;+==ii)))))))))))ii==+;,      ,,,:=i))+=:');
- writeln ('                          ,;+=ii))))))IIIIII))))ii===;.    ,,:=i)=i+');
- writeln ('                         ;+=ii)))IIIIITIIIIII))))iiii=+,   ,:=));=,');
- writeln ('                       ,+=i))IIIIIITTTTTITIIIIII)))I)i=+,,:+i)=i+');
- writeln ('                      ,+i))IIIIIITTTTTTTTTTTTI))IIII))i=::i))i=''');
- writeln ('                     ,=i))IIIIITLLTTTTTTTTTTIITTTTIII)+;+i)+i`');
- writeln ('                     =i))IIITTLTLTTTTTTTTTIITTLLTTTII+:i)ii:''');
- writeln ('                    +i))IITTTLLLTTTTTTTTTTTTLLLTTTT+:i)))=,');
- writeln ('                    =))ITTTTTTTTTTTLTTTTTTLLLLLLTi:=)IIiii;');
- writeln ('                   .i)IIITTTTTTTTLTTTITLLLLLLLT);=)I)))))i;');
- writeln ('                   :))IIITTTTTLTTTTTTLLHLLLLL);=)II)IIIIi=:');
- writeln ('                   :i)IIITTTTTTTTTLLLHLLHLL)+=)II)ITTTI)i=');
- writeln ('                   .i)IIITTTTITTLLLHHLLLL);=)II)ITTTTII)i+');
- writeln ('                   =i)IIIIIITTLLLLLLHLL=:i)II)TTTTTTIII)i''');
- writeln ('                 +i)i)))IITTLLLLLLLLT=:i)II)TTTTLTTIII)i;');
- writeln ('               +ii)i:)IITTLLTLLLLT=;+i)I)ITTTTLTTTII))i;');
- writeln ('              =;)i=:,=)ITTTTLTTI=:i))I)TTTLLLTTTTTII)i;');
- writeln ('            +i)ii::,  +)IIITI+:+i)I))TTTTLLTTTTTII))=,');
- writeln ('          :=;)i=:,,    ,i++::i))I)ITTTTTTTTTTIIII)=+''');
- writeln ('        .+ii)i=::,,   ,,::=i)))iIITTTTTTTTIIIII)=+');
- writeln ('       ,==)ii=;:,,,,:::=ii)i)iIIIITIIITIIII))i+:''');
- writeln ('      +=:))i==;:::;=iii)+)=  `:i)))IIIII)ii+''');
- writeln ('    .+=:))iiiiiiii)))+ii;');
- writeln ('   .+=;))iiiiii)));ii+');
- writeln ('  .+=i:)))))))=+ii+');
- writeln (' .;==i+::::=)i=;');
- writeln (' ,+==iiiiii+,');
- writeln (' `+=+++;`');
- writeln();
- writeln();
+
  //--------------------==============================TEXT color LIGHTGREEN==============================--------------------\\
 textcolor(LightGreen);
  writeln ('presents..'); 
@@ -472,7 +419,6 @@ writeln (' | |     _| |_ ___  | |     ___  _ __ ___  _ __ ___   __ _ _ __   __| 
 writeln (' | |    | |  _/ _ \ | |    / _ \| ''_ ` _ \| ''_ ` _ \ / _` | ''_ \ / _` |');
 writeln (' | |____| | ||  __/ | |___| (_) | | | | | | | | | | | (_| | | | | (_| |');
 writeln (' |______|_|_| \___|  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|');
-writeln ('Alpha Version: 0.8');
 Delay(1200);
 writeln ();
 writeln ();
@@ -830,4 +776,3 @@ writeln();
 writeln('Press <Enter> to terminate the game');
 readln();                
  end.
-//writeln('Game under construction! Wait for the rest of it to come out!');
