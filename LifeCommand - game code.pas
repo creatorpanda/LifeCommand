@@ -359,7 +359,6 @@ end;
 
 //----------====================Position DE====================----------\\
 procedure destination_DE(action:string);
-var
 begin
 StatScreen(TotalSTR, TotalAGI, TotalWIS);
 writeln ('You moved DEEPER INTO THE NOISY FOREST');
@@ -408,8 +407,6 @@ begin
 
  //--------------------==============================TEXT color LIGHTGREEN==============================--------------------\\
 textcolor(LightGreen);
- writeln ('presents..'); 
-Delay(2500);
 ClrScr;
 
 writeln ();
