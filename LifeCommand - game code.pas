@@ -771,5 +771,8 @@ end;
 textcolor(Red);
 writeln();
 writeln('Press <Enter> to terminate the game');
-readln();                
+writeln('------------------------------------------------------------------------------');
+writeln('Github: @creatorpanda');
+writeln('creation of 2016');
+readln();
  end.
