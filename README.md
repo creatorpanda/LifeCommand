@@ -66,3 +66,6 @@ delay (2000);
 *This last one is something like a walkthrough*
 
 3)I tried to make things in a way where you have to move around before you find out what to do.  Allthough the game is short (and also not finished), you first have to get wood from the **noisy forest**, before you can continue on making a torch in the **peaceful village** and after all that, get into the **dark cave**. The **clean river** is one of the four places i had to create, but there is nothing to do there. Nothing that adds to the story. It just exists.
+
+
+In case you don't know what to do: Click on the green "Clone or Download" button, click "Download Zip". Unzip it, open "LifeCommand the game.exe" and have fun!
